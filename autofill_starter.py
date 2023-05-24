@@ -5,12 +5,12 @@ from selenium.webdriver.common.by import By
 import time
 
 #Initializes the chrome webdriver into a variable
-browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 #opens the URL path that is specified
-browser.get("https://ecommerce-playground.lambdatest.io/index.php?route=account/register")
-browser.implicitly_wait(20)
+driver.get("https://ecommerce-playground.lambdatest.io/index.php?route=account/register")
+driver.implicitly_wait(20)
 #Maximizes the window
-browser.maximize_window()
+driver.maximize_window()
 #Finds the HTML element for the first name bar using the ID
 
 #Sends FirstName in the first name bar
@@ -23,6 +23,6 @@ browser.maximize_window()
 
 #Finds the continue button and clicks
 
-#Checks what the browser title is after the user has been logged in
+#Checks what the driver title is after the user has been logged in
 
 #Asserts for successful login 

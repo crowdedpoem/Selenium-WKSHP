@@ -12,7 +12,7 @@ driver.get("https://www.espn.com/tennis/")
 # allow page to load
 driver.implicitly_wait(10)
 # maximize window
-browser.maximize_window()
+driver.maximize_window()
 # find by tennis rankings link
 
 # click on link
